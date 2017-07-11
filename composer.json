@@ -1,0 +1,37 @@
+{
+    "name" : "pablocianes/wordpress-starter-plugin",
+    "description" : "This 'starter plugin' is a Sandbox plugin for development in WordPress.",
+    "type" : "project",
+    "keywords" : ["wordpress", "wp", "plugin"],
+    "homepage" : "https://pablocianes.com",
+    "license" : "GPL-2.0+",
+    "authors": [
+        {
+            "name" 	: "pablocianes",
+            "email" : "cianespablo@gmail.com"
+        }
+    ],
+    "require": {
+        "php" : ">=5.4.0"
+    },
+    "require-dev": {
+        "kint-php/kint" : "^1.0",
+        "filp/whoops": "~2.0"
+    },
+    "autoload" : {
+        "classmap": [],
+        "files": [
+            "src/support/exceptions.php",
+            "src/sandbox.php"
+        ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "config": {
+        "vendor-dir": "assets/vendor"
+    },
+    "minimum-stability": "dev"
+}
